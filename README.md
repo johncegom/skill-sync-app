@@ -8,96 +8,130 @@ A progressive learning-focused React project designed to help you **grow from JT
 
 ### 🎯 Goal
 
-Create a basic skill tracker UI with local state and layout using HTML, CSS, and basic React.
+Build a clean, functional skill tracker UI using core HTML/CSS, basic JS, and foundational React.
 
-### 🛠️ Features
+### 🛠️ Features (Expanded)
 
 - Display a list of skills (e.g., HTML, CSS, JavaScript)
 - Each skill has a toggle (completed / in progress)
-- Use `useState` to manage status
-- Save data to `localStorage`
+- `useState` for local state management
+- Store skill state in `localStorage`
+- Use **semantic HTML** (`section`, `ul`, `li`, `button`, `form`)
+- Use **basic JSX** and React event handlers (`onClick`, `onChange`)
+- Apply **CSS Modules / Tailwind** for layout and styling
+- Support **keyboard navigation** and focus styles (A11Y basics)
+- Show basic console logs (JT-level logging)
+- Apply the **CSS box model**, flex layout, basic selectors
+- Add simple unit tests for state toggle logic (optional)
 
 ### 📦 Tech Stack
 
 - React + Vite
 - TypeScript
-- JSX, CSS Modules, Tailwind CSS, SCSS
-- LocalStorage Web API
+- Tailwind CSS / CSS Modules
+- Web Storage API
+- Simple Unit Test: Vitest or Jest
 
 ### ✅ Skills Applied
 
-- Variable declarations, functions, arrays
-- JSX, `useState`, events (`onClick`)
-- Semantic HTML: `section`, `ul`, `li`
-- CSS Box Model, Flexbox
+- `useState`, `onClick`, JSX
+- Variables, data types, arrays
+- DOM events, localStorage
+- Console logs
+- Box model, flex basics
+- Keyboard accessibility
+- Semantic HTML
 
 ---
 
-## ⚙️ Phase 2: TL Level – Dynamic Logic & UX
+## ⚙️ Phase 2: TL Level – Dynamic UX + Data Logic
 
 ### 🎯 Goal
 
-Refactor the app to support multiple categories and introduce proper state patterns.
+Enhance SkillSync with categories, routing, and async logic using core patterns.
 
-### 🛠️ Features
+### 🛠️ Features (Expanded)
 
 - Skill categories (Frontend, Backend, UI/UX)
 - Add/edit/remove skills
-- Filter by category
-- Data fetching mock (simulate API with `Promise`)
-- Responsive layout
+- Filter by category (`map`, `filter`, `sort`)
+- Simulate fetching skills with `Promise`, `setTimeout`
+- Responsive layout + media queries
+- Handle async states: loading, error, data
+- Lifting state up + `useEffect`
+- Add dynamic routing: `/`, `/skill/:id` using React Router
+- Form validation and error feedback
+- Use `useRef`, `useCallback`, `useMemo` where needed
+- Apply `strict equality`, scope rules, and `undefined/null` handling
+- Implement **pseudo-classes**, transitions, and specificity awareness
+- Style semantic elements + build for SEO
 
 ### 📦 Tech Stack
 
-- TypeScript
-- `useEffect` + async data fetch simulation
-- `useMemo`, `useCallback` for optimization
-- React Router (basic routing: `/`, `/skill/:id`)
-- SCSS, Tailwind CSS
+- React Router, SCSS, Tailwind
+- Async JS logic: Promises
+- Form handling libraries (e.g., Zod or basic JS validation)
+- File structure with separation of components/hooks/utils
 
 ### ✅ Skills Applied
 
-- Function scope, anonymous functions
-- Array methods: `map`, `filter`, `sort`
-- Web Storage API
-- React conditional rendering
-- Responsive grid layout
-- Flexbox + semantic HTML5
+- Async logic (Promises)
+- Array methods, anonymous functions
+- Lifting state, conditional rendering
+- useMemo, useCallback, useEffect
+- Form handling, validation
+- Flexbox + responsive layout
+- Module scoping
+- Web Fetch API (simulated)
+- CSS pseudo-classes, transitions
+- Equality checks and error objects
 
 ---
 
-## 🧠 Phase 3: ST Level – Advanced State, Patterns & Optimization
+## 🧠 Phase 3: ST Level – Architecture, Optimization & Patterns
 
 ### 🎯 Goal
 
-Scale the app to support complex state flows, reusable components, and professional patterns.
+Scale app to use full architectural practices: global state, context, factory pattern, custom hooks, and dashboard analytics.
 
-### 🛠️ Features
+### 🛠️ Features (Expanded)
 
-- Global theme + user role context (admin vs user)
-- `useReducer` to manage skill state tree
-- Factory pattern for skill block rendering
-- Custom hooks for localStorage, keyboard events
-- Lazy rendering of skill cards
-- Dashboard analytics with chart view (pie, progress)
+- Global theme and user role context (`admin` vs `user`)
+- Manage skills via `useReducer` (supports undo/redo)
+- Add custom hooks: `useLocalStorage`, `useShortcut`, `useTheme`
+- Role-based dashboard routing (admin/user)
+- Use **Factory Pattern** for rendering skill blocks
+- Add charts (Chart.js or SVG-based) for skill completion stats
+- Lazy load skill components
+- Add performance optimizations: `defer`, `lazy`, `memo`
+- Add **unit tests for reducers, hooks**, and state logic
+- Advanced CSS: Grid, rem/vh units, transitions
+- Use Logger (e.g., `console.group`, or `winston` for future backend)
+- Apply `arrow functions`, closures, high-order functions
+- Add `ECMAScript modules` with `import/export`
+- Use semantic animation transitions
+- Add fallback UIs and error boundaries
 
 ### 📦 Tech Stack
 
-- TypeScript
 - React Context API
-- Reducers and logger middleware
-- Custom hooks: `useLocalStorage`, `useShortcut`
-- Chart.js or SVG Pie Components
-- Role-based routing (admin/user dashboard)
-- SCSS, Tailwind CSS
+- `useReducer` + custom middleware/logger
+- Tailwind + SCSS Grid layouts
+- Chart.js or Recharts
+- Jest + React Testing Library
+- Role-based routes
 
 ### ✅ Skills Applied
 
-- Closures, arrow functions, pure & HOFs
-- Module, Singleton, Factory design patterns
-- ECMAScript modules (`import/export`)
-- CSS Grid, transitions, dynamic units (rem, vh)
-- Testing prep: Unit tests for reducers and hooks
+- Context API, useReducer
+- Closures, arrow functions, HOFs
+- Custom hooks
+- ECMAScript modules
+- Lazy loading, performance optimization
+- Logger setup (optional)
+- Grid + advanced CSS units
+- Responsive charts and data dashboards
+- Factory and singleton pattern application
 
 ---
 
